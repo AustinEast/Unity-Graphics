@@ -902,6 +902,8 @@ namespace UnityEditor.Rendering.Universal.ShaderGraph
                 renderStates = CoreRenderStates.Default,
                 pragmas = CorePragmas.DOTSInstanced,
                 includes = CoreIncludes.MotionVectors,
+                defines = new DefineCollection(),
+                keywords = new KeywordCollection(),
             };
 
             AddAlphaClipControlToPass(ref result, target);
